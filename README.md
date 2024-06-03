@@ -10,18 +10,27 @@ The server supports two commands:
 ## Server Startup
 The following options are specified when the server is started:
 
-- `--threads` - the number of threads in the request processing pool (default 5).
-- `--quarantine` - the path to the quarantine directory (default ./).
+- `--max-threads` - the number of threads in the request processing pool (default 5).
+- `--quarantine-folder` - the path to the quarantine directory (default ./).
+
 Example of starting the server:
-```python3 server.py --threads 10 --quarantine /path/to/quarantine```
+
+```python3 server.py --max-threads 10 --quarantine-folder /path/to/quarantine```
 
 ## Client Startup
 The following options are specified when the client is started:
 
-- `--command` - the command to be sent to the server.
-- `--params` - the command parameters in JSON format.
+flags for `CheckLocalFile`:
+- `--path` - the path to the file to be checked.
+- `--sign` - the signature in hexadecimal format to be found in the checked file.
+
+flag for `QuarantineLocalFile`:
+- `--path` - the path to the file to be quarantined.
+
 Examples of starting the client:
+
 ```python3 client.py CheckLocalFile --path /path/to/file --sign 54a1```
+
 ```python3 client.py QuarantineLocalFile --path /path/to/file```
 
 ##Termination
