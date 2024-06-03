@@ -7,6 +7,15 @@ The server supports two commands:
 - `CheckLocalFile` - check the specified file in the request for a signature. The file path and signature are transmitted in the request parameters. The server returns a list of offsets of the found signatures in the response. The signature is represented as a set of bytes up to 1KB in length.
 - `QuarantineLocalFile` - move the specified file to quarantine (to a special directory specified in the server startup options).
 
+## Installation
+1. Clone the project from Git:
+   
+```git clone https://github.com/your_username/tcp-server-client.git```
+
+3. Edit the values in the `.env` file:
+4. Start the `server.py` with the number of threads and the path to the quarantine directory
+5. Run the `client.py` program with the appropriate command and options:
+
 ## Server Startup
 The following options are specified when the server is started:
 
