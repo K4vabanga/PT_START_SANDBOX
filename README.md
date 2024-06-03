@@ -33,9 +33,9 @@ Examples of starting the client:
 
 ```python3 client.py QuarantineLocalFile --path /path/to/file```
 
-##Termination
+## Termination
 The application terminates execution when the user interrupts it with the SIGINT signal (Ctrl+C).
 
-##Implementation Language
+## Implementation Language
 The project is implemented in Python 3 and is compatible with both POSIX and Windows systems.
 
