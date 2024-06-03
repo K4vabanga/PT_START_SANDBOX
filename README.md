@@ -8,13 +8,10 @@ The server supports two commands:
 - `QuarantineLocalFile` - move the specified file to quarantine (to a special directory specified in the server startup options).
 
 ## Installation
-1. Clone the project from Git:
-   
-```git clone https://github.com/your_username/tcp-server-client.git```
-
-3. Edit the values in the `.env` file:
-4. Start the `server.py` with the number of threads and the path to the quarantine directory
-5. Run the `client.py` program with the appropriate command and options:
+1. Clone the repository using `git clone https://github.com/K4vabanga/PT_START_SANDBOX.git`.
+2. Edit the values in the `.env` file:
+3. Start the `server.py` with the number of threads and the path to the quarantine directory
+4. Run the `client.py` program with the appropriate command and options:
 
 ## Server Startup
 The following options are specified when the server is started:
